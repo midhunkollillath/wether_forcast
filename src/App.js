@@ -1,17 +1,16 @@
-import './App.css';
-import { Container, Typography } from '@mui/material';
+import React from 'react';
+import './App.css'; 
 import Header from './components/Header';
-import WeatherDashboard from './components/WeatherDashBoard';
+import WeatherDashboard from './components/dashboard';
 import Footer from './components/Footer';
 
 function App() {
   return (
-    <Container maxWidth="xl">
-    <Header />
-  
-    <WeatherDashboard />
-    <Footer />
-  </Container>
+    <div className="app-container">
+      <Header className="header" />
+      <WeatherDashboard />
+      <Footer className="footer" />
+    </div>
   );
 }
 
